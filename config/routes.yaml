@@ -17,3 +17,8 @@ login_check:
   methods:  [POST]
   defaults:
     _format: json
+user:
+  path: /user
+  controller: App\Controller\DefaultController::user
+  defaults:
+    _format: json

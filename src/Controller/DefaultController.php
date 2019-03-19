@@ -54,4 +54,13 @@ class DefaultController extends AbstractController
 
     }
 
+
+    public function user()
+    {
+        $data = [sprintf( $this->getUser()->getId())];
+
+        return View::create($data, Response::HTTP_OK);
+    }
+
+
 }

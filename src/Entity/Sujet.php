@@ -48,6 +48,9 @@ class Sujet
      */
     private $commentaires;
 
+
+
+
     public function __construct()
     {
         $this->commentaires = new ArrayCollection();
@@ -152,4 +155,6 @@ class Sujet
     {
         return $this->getContenuSujet();
     }
+
+
 }
